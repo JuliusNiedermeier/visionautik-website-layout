@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 
 import LayoutHeader from "./LayoutHeader.styled";
 import LayoutHero from "./LayoutHero.styled";
-import LayoutHeroWrapper from "./layoutHeroWrapper.styled";
+import LayoutHeroWrapper from "./LayoutHeroWrapper.styled";
 import LayoutSidebar from "./LayoutSidebar";
 import LayoutSidebarWrapper from "./LayoutSidebarWrapper.styled";
 import LayoutMain from "./LayoutMain.styled";
@@ -18,7 +18,7 @@ interface ILayoutContext {
 
 export const LayoutContext: React.Context<ILayoutContext> = createContext(null);
 
-export default (props) => {
+const Layout = (props) => {
   let areas = {
     header: null,
     hero: null,
@@ -60,3 +60,5 @@ export default (props) => {
     </LayoutContext.Provider>
   );
 };
+
+export default Layout;

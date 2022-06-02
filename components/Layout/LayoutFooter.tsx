@@ -1,10 +1,14 @@
-import LayoutFooter from "./LayoutFooter.styled";
+import LayoutFooterStyled from "./LayoutFooter.styled";
 import { useContext } from "react";
 import { LayoutContext } from "./Layout";
 
-export default ({ children }) => {
+const LayoutFooter = ({ children }) => {
   const { sidebarVisible } = useContext(LayoutContext);
   return (
-    <LayoutFooter sidebarVisible={sidebarVisible}>{children}</LayoutFooter>
+    <LayoutFooterStyled sidebarVisible={sidebarVisible}>
+      {children}
+    </LayoutFooterStyled>
   );
 };
+
+export default LayoutFooter;

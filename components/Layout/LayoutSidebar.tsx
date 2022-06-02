@@ -1,7 +1,7 @@
 import { LayoutContext } from "./Layout";
 import { useTheme, DefaultTheme } from "styled-components";
 import { useContext } from "react";
-import LayoutSidebar from "./LayoutSidebar.styled";
+import LayoutSidebarStyled from "./LayoutSidebar.styled";
 import LayoutSidebarHandle from "./LayoutSidebarHandle.styled";
 import LayoutSidebarContent from "./LayoutSidebarContent.styled";
 
@@ -14,13 +14,13 @@ function onHandleClick(
   setSidebarExpanded(!sidebarExpanded);
 }
 
-export default ({ children }) => {
+const LayoutSidebar = ({ children }) => {
   const { sidebarExpanded, setSidebarExpanded } = useContext(LayoutContext);
   const theme = useTheme();
 
   return (
     <>
-      <LayoutSidebar>
+      <LayoutSidebarStyled>
         <LayoutSidebarHandle
           onClick={() =>
             onHandleClick(theme, sidebarExpanded, setSidebarExpanded)
@@ -31,7 +31,9 @@ export default ({ children }) => {
         <LayoutSidebarContent expanded={sidebarExpanded}>
           {children}
         </LayoutSidebarContent>
-      </LayoutSidebar>
+      </LayoutSidebarStyled>
     </>
   );
 };
+
+export default LayoutSidebar;
