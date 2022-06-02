@@ -2,8 +2,10 @@ import { DefaultTheme } from "styled-components";
 
 const theme: DefaultTheme = {
   devices: {
-    desktop: "900px",
+    landscape: "900px",
   },
+
+  sidebarWidth: "18rem",
 };
 
 export default theme;
