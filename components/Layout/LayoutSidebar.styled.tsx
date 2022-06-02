@@ -7,9 +7,9 @@ export default styled.div`
   right: 0;
 
   @media screen and (min-width: ${({ theme }) => theme.devices.landscape}) {
-    width: ${({ theme }) => theme.sidebarWidth};
+    width: ${({ theme }) => theme.space.sidebarWidth};
     position: sticky;
-    top: calc(0.5 * ${({ theme }) => theme.sidebarWidth});
+    top: calc(0.5 * ${({ theme }) => theme.space.sidebarWidth});
     pointer-events: all;
   }
 `;

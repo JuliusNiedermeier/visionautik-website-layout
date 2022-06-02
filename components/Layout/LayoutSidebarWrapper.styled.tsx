@@ -9,7 +9,7 @@ export default styled(Container)`
   @media screen and (min-width: ${({ theme }) => theme.devices.landscape}) {
     z-index: initial;
     position: absolute;
-    top: -${({ theme }) => theme.sidebarWidth};
+    top: -${({ theme }) => theme.space.sidebarWidth};
     bottom: 0;
     left: 0;
     right: 0;

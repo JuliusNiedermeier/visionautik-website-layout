@@ -2,6 +2,6 @@ import styled from "styled-components";
 
 export default styled.div`
   position: relative;
-  min-height: calc(1.5 * ${({ theme }) => theme.sidebarWidth});
+  min-height: calc(1.5 * ${({ theme }) => theme.space.sidebarWidth});
   color: white;
 `;

@@ -12,7 +12,9 @@ export default styled.div<IContainerProps>`
   @media (min-width: ${({ theme }) => theme.devices.landscape}) {
     padding-left: initial;
     padding-right: ${(props) =>
-      props.sidebar ? `calc(${props.theme.sidebarWidth} + 1rem)` : "initial"};
+      props.sidebar
+        ? `calc(${props.theme.space.sidebarWidth} + 1rem)`
+        : "initial"};
     width: min(1500px, 80vw);
     min-width: ${(props) => props.disable?.includes("landscape") && "100vw"};
     margin-left: auto;
