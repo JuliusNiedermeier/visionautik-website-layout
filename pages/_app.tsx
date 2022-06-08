@@ -5,7 +5,7 @@ import theme from "../theme";
 
 import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
-import { linkResolver, repositoryName } from "../prismicio";
+import { linkResolver, repositoryName } from "../prismic";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
