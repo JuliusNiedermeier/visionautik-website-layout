@@ -15,7 +15,17 @@ import Container from "../components/Container";
 import SidebarHeader from "../components/SidebarHeader.styled";
 import SidebarBody from "../components/SidebarBody.styled";
 
-export default function Home() {
+import { createClient } from "../prismic";
+import { PrismicImage, PrismicRichText } from "@prismicio/react";
+
+export async function getStaticProps({ previewData }) {
+  const client = createClient({ previewData });
+  const page = await client.getByUID("home", "home");
+  return { props: { page } };
+}
+
+export default function Home({ page }) {
+  console.log(page);
   return (
     <div>
       <Head>
@@ -26,21 +36,32 @@ export default function Home() {
 
       <Layout>
         <LayoutHeader>
-          <Container></Container>
+          <Container>
+            <img width="30px" src={"/favicon.ico"}></img>Visionautik Akademie
+          </Container>
         </LayoutHeader>
 
         <LayoutHero>
-          <LayoutHeroBackground></LayoutHeroBackground>
-          <LayoutContainer></LayoutContainer>
+          <LayoutHeroBackground>
+            <PrismicImage
+              style={{ height: "100%", width: "100%", objectFit: "cover" }}
+              field={page.data.heroImage}
+            ></PrismicImage>
+          </LayoutHeroBackground>
+          <LayoutContainer>
+            <PrismicRichText field={page.data.heroText}></PrismicRichText>
+          </LayoutContainer>
         </LayoutHero>
 
         <LayoutSidebar>
-          <SidebarHeader></SidebarHeader>
-          <SidebarBody></SidebarBody>
+          <SidebarHeader>top</SidebarHeader>
+          <SidebarBody>bottom</SidebarBody>
         </LayoutSidebar>
 
         <LayoutMain>
-          <LayoutContainer></LayoutContainer>
+          <LayoutContainer>
+            <PrismicRichText field={page.data.bodyText}></PrismicRichText>
+          </LayoutContainer>
         </LayoutMain>
 
         <LayoutFooter>
