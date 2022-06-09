@@ -12,8 +12,8 @@ import {
 } from "../components/Layout";
 
 import Container from "../components/Container";
-import SidebarHeader from "../components/SidebarHeader.styled";
-import SidebarBody from "../components/SidebarBody.styled";
+import LayoutSidebarHeader from "../components/Layout/LayoutSidebarHeader.styled";
+import LayoutSidebarBody from "../components/Layout/LayoutSidebarBody.styled";
 
 export default function Home() {
   return (
@@ -35,8 +35,8 @@ export default function Home() {
         </LayoutHero>
 
         <LayoutSidebar>
-          <SidebarHeader></SidebarHeader>
-          <SidebarBody></SidebarBody>
+          <LayoutSidebarHeader></LayoutSidebarHeader>
+          <LayoutSidebarBody></LayoutSidebarBody>
         </LayoutSidebar>
 
         <LayoutMain>
