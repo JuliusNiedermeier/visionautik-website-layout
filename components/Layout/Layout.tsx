@@ -1,10 +1,10 @@
 import React, { createContext, useState } from "react";
 
 import LayoutHeader from "./LayoutHeader.styled";
-import LayoutHero from "./LayoutHero.styled";
-import LayoutHeroWrapper from "./LayoutHeroWrapper.styled";
-import LayoutSidebar from "./LayoutSidebar";
-import LayoutSidebarWrapper from "./LayoutSidebarWrapper.styled";
+import LayoutHero from "./Hero/LayoutHero.styled";
+import LayoutHeroWrapper from "./Hero/LayoutHeroWrapper.styled";
+import LayoutSidebar from "./Sidebar/LayoutSidebar";
+import LayoutSidebarWrapper from "./Sidebar/LayoutSidebarWrapper.styled";
 import LayoutMain from "./LayoutMain.styled";
 import LayoutFooter from "./LayoutFooter";
 import LayoutModalBackdrop from "./LayoutModalBackdrop.styled";

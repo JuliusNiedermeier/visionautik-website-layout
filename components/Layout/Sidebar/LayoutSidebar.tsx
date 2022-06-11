@@ -1,4 +1,4 @@
-import { LayoutContext } from "./Layout";
+import { LayoutContext } from "../Layout";
 import { useTheme, DefaultTheme } from "styled-components";
 import { useContext } from "react";
 import LayoutSidebarStyled from "./LayoutSidebar.styled";

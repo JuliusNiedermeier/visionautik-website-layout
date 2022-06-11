@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import LayoutContainer from "./LayoutContainer.styled";
+import LayoutContainer from "../LayoutContainer.styled";
 
 const LayoutSidebarWrapper = styled(LayoutContainer)`
   position: sticky;
