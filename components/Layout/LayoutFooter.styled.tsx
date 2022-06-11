@@ -1,10 +1,10 @@
 import styled from "styled-components";
+import { useContext } from "react";
+import { LayoutContext } from "./Layout";
 
-export interface ILayoutFooterProps {
-  sidebarVisible?: boolean;
-}
-
-export default styled.div<ILayoutFooterProps>`
+export default styled.div`
   background-color: white;
-  padding-bottom: ${({ sidebarVisible }) => (sidebarVisible ? "6rem" : "1rem")};
+  padding-bottom: ${() => {
+    return useContext(LayoutContext).sidebarVisible ? "6rem" : "1rem";
+  }};
 `;

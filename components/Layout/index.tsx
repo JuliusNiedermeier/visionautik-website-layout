@@ -1,6 +1,6 @@
 import Layout from "./Layout";
 import LayoutContainer from "./LayoutContainer.styled";
-import LayoutFooter from "./LayoutFooter";
+import LayoutFooter from "./LayoutFooter.styled";
 import LayoutHeader from "./LayoutHeader.styled";
 import LayoutHero from "./Hero/LayoutHero.styled";
 import LayoutHeroBackground from "./Hero/LayoutHeroBackground.styled";

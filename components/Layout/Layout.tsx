@@ -6,7 +6,7 @@ import LayoutHeroWrapper from "./Hero/LayoutHeroWrapper.styled";
 import LayoutSidebar from "./Sidebar/LayoutSidebar";
 import LayoutSidebarWrapper from "./Sidebar/LayoutSidebarWrapper.styled";
 import LayoutMain from "./LayoutMain.styled";
-import LayoutFooter from "./LayoutFooter";
+import LayoutFooter from "./LayoutFooter.styled";
 import LayoutModalBackdrop from "./LayoutModalBackdrop.styled";
 import Relative from "../Relative.styled";
 
