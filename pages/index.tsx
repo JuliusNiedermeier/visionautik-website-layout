@@ -9,10 +9,9 @@ import {
   LayoutMain,
   LayoutFooter,
   LayoutContainer,
+  LayoutSidebarBody,
+  LayoutSidebarHeader,
 } from "../components/Layout";
-
-import LayoutSidebarHeader from "../components/Layout/LayoutSidebarHeader.styled";
-import LayoutSidebarBody from "../components/Layout/LayoutSidebarBody.styled";
 
 export default function Home() {
   return (
