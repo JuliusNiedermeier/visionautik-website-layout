@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Container from "../Container";
+import LayoutContainer from "./LayoutContainer.styled";
 
-export default styled(Container)`
+const LayoutSidebarWrapper = styled(LayoutContainer)`
   position: sticky;
   bottom: 0;
   z-index: 2;
@@ -19,3 +19,9 @@ export default styled(Container)`
     pointer-events: none;
   }
 `;
+
+LayoutSidebarWrapper.defaultProps = {
+  respectSidebar: false,
+};
+
+export default LayoutSidebarWrapper;

@@ -11,7 +11,6 @@ import {
   LayoutContainer,
 } from "../components/Layout";
 
-import Container from "../components/Container";
 import LayoutSidebarHeader from "../components/Layout/LayoutSidebarHeader.styled";
 import LayoutSidebarBody from "../components/Layout/LayoutSidebarBody.styled";
 
@@ -26,7 +25,7 @@ export default function Home() {
 
       <Layout>
         <LayoutHeader>
-          <Container></Container>
+          <LayoutContainer respectSidebar={false}></LayoutContainer>
         </LayoutHeader>
 
         <LayoutHero>
@@ -44,7 +43,7 @@ export default function Home() {
         </LayoutMain>
 
         <LayoutFooter>
-          <Container></Container>
+          <LayoutContainer respectSidebar={false}></LayoutContainer>
         </LayoutFooter>
       </Layout>
     </div>

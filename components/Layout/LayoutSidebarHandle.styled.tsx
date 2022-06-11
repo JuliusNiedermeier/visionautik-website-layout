@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Container from "../Container";
+import LayoutContainer from "./LayoutContainer.styled";
 
-export default styled(Container)`
+export default styled(LayoutContainer)`
   background-color: darkblue;
   padding-top: 2rem;
   padding-bottom: 1rem;

@@ -1,5 +1,5 @@
 import Layout from "./Layout";
-import LayoutContainer from "./LayoutContainer";
+import LayoutContainer from "./LayoutContainer.styled";
 import LayoutFooter from "./LayoutFooter";
 import LayoutHeader from "./LayoutHeader.styled";
 import LayoutHero from "./LayoutHero.styled";
